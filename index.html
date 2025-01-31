@@ -26,6 +26,14 @@
         </div>
     </div>
     <script>
+
+
+
+        //no right click code
+         window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
+
         let currentLevel = 1;
         let currentQuestionIndex = 0;
         let answerTimeout;
