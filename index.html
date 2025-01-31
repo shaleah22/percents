@@ -34,6 +34,12 @@
             e.preventDefault();
         }, false);
 
+
+
+
+
+
+
         let currentLevel = 1;
         let currentQuestionIndex = 0;
         let answerTimeout;
@@ -103,7 +109,6 @@
 
 {"question":"<br>Extra Practice Drill. Level will not be recorded.","answer":"ok","options":["ok","ok","ok","ok"],"imageUrl":""},
 
-
 //multiple percents tax tip included final bill
   {"question":"<br>A restaurant bill is b dollars. A 15% tip and 8% sales tax are added. What is the total cost?","answer":"1.23b","options":["1.15b","1.08b","1.23b","1.28b"],"imageUrl":""},
   {"question":"<br>A meal costs m dollars. A 20% tip and 6% tax are applied. What is the final cost?","answer":"1.26m","options":["1.2m","1.26m","1.06m","1.3m"],"imageUrl":""},
@@ -113,51 +118,22 @@
 
 //multiple percents discount then new price with tax expression
   {"question":"<br>A store is offering a 25% discount on a bicycle originally priced at $200. After the discount, a 7% sales tax is applied. How much is the final price?","answer":"(0.75 × 200) × 1.07","options":["(0.75 × 200) × 1.07","(1.25 × 200) × 1.07","(0.75 × 200) × 1.05","(0.75 × 200) × 1.08"],"imageUrl":""},
-
-
-
  {"question":"<br>A sofa originally costs $850 and is on sale for 40% off. After the discount, a 5% tax is added. How much is the final price?","answer":"(0.6 × 850) × 1.05","options":["(0.65 × 850) × 1.05","(0.6 × 850) × 1.05","(0.6 × 850) × 1.07","(0.55 × 850) × 1.05"],"imageUrl":""},
 
-
-
-
-
+ //mark up or mark down then commission
 { "question": "<br>A store purchased a sofa for $500 and marked it up by 30%. Allison earns a 12% commission on sales. How much commission did she make from selling the sofa?", "answer": "(1.3 × 500) × 0.12", "options": ["(1.12 × 500) × 0.3", "(1.3 × 500) × 0.12", "(0.7 × 500) × 0.12", "(1.3 × 500) × 0.15"] },
-
-
-
 { "question": "<br>A store bought a table for $150 and marked it down by 40%. Marcella earns a 15% commission on sales. How much commission did she make from selling the table?", "answer": "(0.6 × 150) × 0.15", "options": ["(1.15 × 150) × 0.4", "(0.6 × 150) × 0.4", "(1.4 × 150) × 0.15", "(0.6 × 150) × 0.15"] },
            
-
-
-
-
-
 //test most missed type of problems
-
-
-
 //multiple commission
   {"question":"<br>A jewelry shop bought a necklace for $200 and marked it up by 75%. The salesperson, Mark, earns an 18% commission on sales. How much commission did he make from selling the necklace?","answer":"(1.75 × 200) × 0.18","options":["(1.8 × 200) × 0.18","(1.75 × 200) × 0.18","(1.75 × 200) × 0.15","(1.75 × 200) × 0.2"],"imageUrl":""},
   {"question":"<br>A hardware store bought a toolset for $90 and marked it up by 60%. The salesperson, Rachel, makes a 10% commission on sales. How much commission did she make from selling the toolset?","answer":"(1.6 × 90) × 0.1","options":["(1.5 × 90) × 0.1","(1.6 × 90) × 0.1","(1.6 × 90) × 0.15","(1.6 × 90) × 0.2"],"imageUrl":""},
- 
-
-
-
 //multiple discounts
   {"question":"<br>A store is offering a 25% discount on a bicycle originally priced at $200. After the discount, a 7% sales tax is applied. How much is the final price?","answer":"(0.75 × 200) × 1.07","options":["(0.75 × 200) × 1.07","(0.8 × 200) × 1.07","(0.75 × 200) × 1.05","(0.75 × 200) × 1.08"],"imageUrl":""},
- 
   {"question":"<br>A laptop is discounted by 15% off its original price of $1,000. After the discount, an 8% sales tax is applied. What is the final price?","answer":"(0.85 × 1000) × 1.08","options":["(0.9 × 1000) × 1.08","(0.85 × 1000) × 1.08","(0.85 × 1000) × 1.06","(0.8 × 1000) × 1.08"],"imageUrl":""},
   {"question":"A TV originally priced at $600 is on sale for 20% off. After the discount, a 9% tax is added. How much is the final price?","answer":"(0.8 × 600) × 1.09","options":["(0.8 × 600) × 1.07","(0.85 × 600) × 1.09","(0.8 × 600) × 1.09","(0.75 × 600) × 1.09"],"imageUrl":""},
-  
-
-
-
-
-
+  //percent equation
   {"question":"<br>After erosion, a mountain’s height was reduced to 5,760 feet. This was 80% of its original height. What was the original height?","answer":"5760 = 0.8(h)","options":["5760 = 0.2(h)","h = 0.8(5760)","5760 = 0.8(h)"],"imageUrl":""},
-
-
   {
     "question": "<br>A tree’s height after a storm was reduced to 18 feet. This was 75% of its original height. What was the original height?",
     "answer": "18 = 0.75(h)",
@@ -171,35 +147,62 @@
     "imageUrl": ""
   },
 
-
-
-
-
-
 /*
 
   {"question":"<br>A boutique sells a designer bag with a 75% markup. If the bag is sold for $280, what is its non-markup price, rounded to the nearest dollar?","answer":"280 ÷ 1.75","options":["280 × 0.75","280 ÷ 1.75","280 ÷ 0.75","280 × 1.25"],"imageUrl":""},
 
 */
 
-
-
 /*
   {"question":"<br>A bookstore purchases 200 identical novels for a total cost of $800 and sells them for $6 each. What is the percent markup?","answer":"((6 × 200 - 800) ÷ 800) × 100","options":["((6 × 200 - 800) ÷ 800) × 100","((6 × 200) ÷ 800) × 100","((6 × 200 - 800) ÷ 200) × 100","((6 × 200) ÷ 200) × 100"],"imageUrl":""},
 
 */
-
-
-
-
-
 //multiple percents tax tip included final bill
   {"question":"<br>A restaurant bill is b dollars. A 15% tip and 8% sales tax are added. What is the total cost?","answer":"1.23b","options":["1.15b","1.08b","1.23b","1.28b"],"imageUrl":""},
   {"question":"<br>A meal costs m dollars. A 20% tip and 6% tax are applied. What is the final cost?","answer":"1.26m","options":["1.2m","1.26m","1.06m","1.3m"],"imageUrl":""},
   {"question":"<br>A dinner bill is d dollars. An 18% tip and 7% tax are added. What is the total cost?","answer":"1.25d","options":["1.18d","1.07d","1.3d","1.25d"],"imageUrl":""},
   {"question":"<br>A coffee shop bill is c dollars. A 10% tip and 5% tax are added. What is the total cost?","answer":"1.15c","options":["1.10c","1.05c","1.15c","1.2c"],"imageUrl":""},
   {"question":"<br>A lunch bill is l dollars. A 22% tip and 8% tax are applied. What is the final cost?","answer":"1.30l","options":["1.22l","1.08l","1.30l","1.28l"],"imageUrl":""},
-  
+//similar questions from old drill
+  {
+    "question": "The price of a movie ticket increased from $8 to $10. What is the percent of increase?<br>a. 20%<br>b. 25%<br>c. 15%<br>d. 10%",
+    "answer": "b",
+    "imageUrl": "https://i.postimg.cc/L5XYM1Tb/percent-of-change.gif"
+  },
+  {
+    "question": "Rayaan estimated the cost of a basketball at $50, but the actual price was $40. What is the percent of error?<br>a. 25%<br>b. 20%<br>c. 10%<br>d. 15%",
+    "answer": "a",
+    "imageUrl": "https://i.postimg.cc/BQQBGY76/dog.gif"
+  },
+  {
+    "question": "A bicycle, b, is marked up 18%. What is the retail price?",
+    "answer": "1.18b",
+    "options": ["1.018b", "0.18b", "1.18b", "18b"],
+    "imageUrl": ""
+  },
+  {
+    "question": "Natalia bought a dress, d, that had a 40% markdown. Which expression shows the price after the discount but before tax?",
+    "answer": "0.60d",
+    "options": ["0.40d", "0.60d", "1.40d", "40d"],
+    "imageUrl": ""
+  },
+  {
+    "question": "Max bought a laptop, L. Sales tax is 6.5%. Which expression shows the total price plus tax?",
+    "answer": "1.065L",
+    "options": ["1.0065L", "0.65L", "1.065L", "6.5L"],
+    "imageUrl": ""
+  },
+  {
+    "question": "Sofia deposited $5,000 into an account that earns an annual interest rate of 4% for 5 years. What is the total amount in her account after 5 years?<br><br>a. A = 5000 / (0.04 * 5)<br>b. A = 5000 + (5000)(0.04)(5)<br>c. A = (5000)(1.04)(5)",
+    "answer": "b",
+    "imageUrl": ""
+  },
+  {
+    "question": "Gabriel invested $3,500 in a savings account at an annual interest rate of 3.5% for 4 years. How much interest will he earn?<br><br>a. I = (3500)(3.5)(4)<br>b. I = (3500)(0.035)(4)<br>c. I = 3500 / (0.035 * 4)",
+    "answer": "b",
+    "imageUrl": ""
+  },
+
 
   {"question":"<br>You have come to the end of this drill.","answer":"end","options":["end","of","questions"],"imageUrl":""},
 
